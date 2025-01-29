@@ -82,7 +82,7 @@ def main():
     print("1. By Rating")
     print("2. By Difficulty")
     print("3. By Weighted Score")
-    print("4. By all")
+    print("4. By All")
 
     rank_choice = int(input("Enter the number of your choice: "))
     
@@ -131,7 +131,7 @@ def main():
         display_table(sorted_by_difficulty)
 
     if rank_by == "weighted_score" or rank_by == "all":
-        print("\nEnter the weights for the algorithm (Enter for default 0):")
+        print("\nEnter the weights for the algorithm (Enter for default 1):")
         w1 = input("Weight for Rating: ")
         w1 = float(w1) if w1.strip() else 1.0
         
